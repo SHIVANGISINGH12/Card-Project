@@ -16,32 +16,54 @@
     <div class="container">
       <h1>User Information Card</h1>
       <div class="detailsContainer">
-        <div>First Name:</div>
-        <div>Last Name:</div>
-        <div>Country:</div>
-        <div>Phone Number:</div>
-        <div>State:</div>
-        <div>City:</div>
-        <div>Village:</div>
+        <div class="infoLanes">
+          <div> <p>First Name:</p></div>
+          <div id="firstName"></div>
+        </div>
+        <div class="infoLanes">
+          <div>Last Name:</div>
+          <div id="lastName"></div>
+        </div>
+        <div class="infoLanes">
+          <div>Country:</div>
+          <div id="country"></div>
+        </div>
+        <div class="infoLanes">
+          <div>Phone Number:</div>
+          <div id="phoneNumber"></div>
+        </div>
+        <div class="infoLanes">
+          <div>State:</div>
+          <div id="state"></div>
+        </div>
+        <div class="infoLanes">
+          <div>City:</div>
+          <div id="city"></div>
+        </div>
+        <div class="infoLanes">
+          <div>Village:</div>
+          <div id="village"></div>
+        </div>
       </div>
       <div class="colorSelectContainer">
         <div class="boxColorContainer">
           <p>Select Box Color:</p>
-          <div class="colorBox"></div>
+          <input type="color" class="colorBox" id="boxColor" value="#ffffff">
         </div>
         <div class="outerColorContainer">
           <p>Select Outer Color:</p>
-          <div class="colorBox"></div>
+          <input type="color" class="colorBox" id="outerColor" value="#ffffff">
         </div>
         <div class="fontColorContainer">
           <p>Select Font Color:</p>
-          <div class="colorBox"></div>
+          <input type="color" class="colorBox" id="fontColor" value="#ffffff">
         </div>
       </div>
       <div class="buttonsContainer">
-        <button>Change Color</button>
-        <button>Clear Storage</button>
+        <button id="changeColor">Change Color</button>
+        <button id="clearStorage">Clear Storage</button>
       </div>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
